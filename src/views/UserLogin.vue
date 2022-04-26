@@ -20,12 +20,24 @@
         <img alt="" src="../assets/08.jpg" width="100%" height="100%" />
       </div>
     </section>
+    <el-button class="url" @click="jumpIndex">点击跳转主页面</el-button>
   </body>
 </template>
-<script lang="ts">
+
+<script lang="ts" scoped>
+import { defineComponent } from "@vue/runtime-core";
+
+export default defineComponent({
+  methods: {
+    jumpIndex() {
+      console.log("进入主页");
+      this.$router.push({ path: '/indexUser' });
+    },
+  },
+});
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 * {
   /* 初始化 取消页面的内边距 */
   padding: 0;
@@ -89,5 +101,9 @@ section div:nth-child(6) {
   100% {
     transform: rotateY(360deg);
   }
+}
+
+.url {
+  margin-bottom: 500px;
 }
 </style>

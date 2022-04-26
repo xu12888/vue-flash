@@ -20,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
     // route level code-splitting
     // this generates a separate chunk (index.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "index" */ '../views/indexUser.vue')
+    component: () => import(/* webpackChunkName: "index" */ '/src/views/index/indexUser.vue')
   }
 ]
 
