@@ -47,19 +47,11 @@
         </div>
         <div class="head_main_right">
           <el-row class="head_main_right_button">
-            <el-button
-              size="small"
-              type="info"
-              style="border: none;"
-            >
+            <el-button size="small" type="info" style="border: none">
               <el-icon style="margin-right: 5px"><user /></el-icon>
               注册</el-button
             >
-            <el-button
-              size="small"
-              type="primary"
-              style="border: none"
-            >
+            <el-button size="small" type="primary" style="border: none">
               <el-icon style="margin-right: 5px"><lightning /></el-icon>
               登录</el-button
             >
@@ -72,19 +64,123 @@
       <div class="lift"></div>
       <div class="main">
         <div class="boby_main_lift">
-          <user-button @click="bgcolor(1)"></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
-          <user-button></user-button>
+          <user-button @click="bgcolor(1)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#2FB6C1" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT" style="color:#2FB6C1">全部</div>
+              <div class="boby_main_lift_btnNUMBER" style="color:#E4E0EF">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(2)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">DATA2</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(3)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">CSGO</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(4)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">英雄联盟</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(5)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">王者荣耀</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(6)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">激斗峡谷</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(7)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">篮球</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(8)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">足球</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(9)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">传说对决</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(10)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">绝地求生</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(11)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">穿越火线</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(12)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">守望先锋</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
+          <user-button @click="bgcolor(13)">
+            <div class="boby_main_lift_btn">
+              <div class="boby_main_lift_btnICON">
+                <el-icon color="#3B3C4A" :size="16"><aim /></el-icon>
+              </div>
+              <div class="boby_main_lift_btnFONT">魔兽争霸三</div>
+              <div class="boby_main_lift_btnNUMBER">111</div>
+            </div>
+          </user-button>
         </div>
         <div class="boby_main_main"></div>
         <div class="boby_main_right"></div>
@@ -95,10 +191,7 @@
 </template>
 
 <script setup lang="ts">
-import UserButton from './component/index-buttons.vue'
-
-
-
+import UserButton from "./component/index-buttons.vue";
 </script>
 
 <style lang="scss">
@@ -158,16 +251,47 @@ import UserButton from './component/index-buttons.vue'
   margin-right: 20px;
 }
 .boby_main_lift {
-  width: 13%;
+  width: 15%;
   display: flex;
   flex-wrap: wrap;
+  align-items: center; // 垂直对齐
   background-color: #0a0c18;
 }
 .boby_main_main {
   width: 63%;
 }
 .boby_main_right {
-  width: 24%;
+  width: 22%;
   background-color: #0a0c18;
+}
+.boby_main_lift_btn {
+  width: 96%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.boby_main_lift_btnICON {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.boby_main_lift_btnFONT {
+  width: 50%;
+  height: 100%;
+  color: #505A6D;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+.boby_main_lift_btnNUMBER{
+  width: 20%;
+  height: 100%;
+  color: #505A6D;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 10px;
 }
 </style>

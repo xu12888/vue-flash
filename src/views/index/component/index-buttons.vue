@@ -2,14 +2,13 @@
   <div
     style="
       width: 90%;
-      height: 40px;
+      height: 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
     "
   >
     <button class="index-user-button" @click="setShow = true">
-      <slot></slot>
       <div
         v-show="setShow"
         style="
@@ -19,6 +18,7 @@
           margin-left: 3px;
         "
       ></div>
+      <slot></slot>
     </button>
   </div>
 </template>
@@ -32,6 +32,9 @@ const setShow = ref();
 .index-user-button {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
   background-color: #0a0c18;
   border: none;
 }
